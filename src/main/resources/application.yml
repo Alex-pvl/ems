@@ -1,0 +1,10 @@
+spring:
+  security:
+    user:
+      name: a
+      password: a
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 80
