@@ -1,5 +1,24 @@
 spring:
   security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 05a13f5e65542e571ff6
+            client-secret: f64b70cdd56fd46aea2fa7de78db5b871a1f6540
+          vk:
+            client-id: 51655447
+            client-secret: SaJBb8OcDJbx9oZm6Vvc
+            redirect-uri: http://79.141.65.68:666/login/oauth2/code/vk
+            client-authentication-method: post
+            authorization-grant-type: authorization_code
+            scope: friends
+        provider:
+          vk:
+            authorization-uri: https://oauth.vk.com/authorize
+            token-uri: https://oauth.vk.com/access_token
+            user-info-uri: https://api.vk.com/method/users.get?v=5.52&fields=photo_max
+            user-name-attribute: first_name
     user:
       name: a
       password: a
@@ -7,4 +26,4 @@ spring:
     hibernate:
       ddl-auto: update
 server:
-  port: 80
+  port: 666

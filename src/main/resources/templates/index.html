@@ -82,7 +82,7 @@
                 <td th:text="${employee.email}"></td>
                 <td>
                     <a th:href="@{/updateForm/{id}(id=${employee.id})}" class="btn btn-primary">Update</a>
-                    <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger">Update</a>
+                    <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         </tbody>
