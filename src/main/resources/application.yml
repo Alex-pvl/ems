@@ -6,11 +6,12 @@ spring:
           github:
             client-id: 05a13f5e65542e571ff6
             client-secret: f64b70cdd56fd46aea2fa7de78db5b871a1f6540
-    user:
-      name: admin
-      password: 368f2a6e-ed0d-4a3e-96ea-c84b2fb042e2
   jpa:
     hibernate:
       ddl-auto: update
 server:
   port: 666
+auth:
+  admin:
+    username: admin
+    password: 368f2a6e-ed0d-4a3e-96ea-c84b2fb042e2
